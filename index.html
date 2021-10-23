@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphismo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Imagens/favicon-16x16.png" type="image/x-icon">
+    
+
+</head>
+<body>
+    <div class="wallpaper">
+        <button class="toggle btn">Clique aqui!</button>
+        <div class='painel hidden glass'>
+            <div class='avatar'><img src="Imagens/rosto.jpg" alt="Avatar"></div>
+            <div class="time"></div>
+            <div class="tiles">
+                <div class="tile weather">Weather</div>
+                <div class="tile edge">Edge</div>
+                <div class="tile stocks">Stocks</div>
+                <div class="tile calendar">Calendar</div>
+                <div class="tile photos">Photos</div>
+                <div class="tile todo">To do</div>
+            </div>
+            <div class="bottons">
+                <button class="btn">Add Widgets</button>                
+            </div>
+            <div class="top stories">Top Stories</div>
+
+        </div>
+
+    </div>
+    <script type="text/javascript">
+        const toggleBtn = document.querySelector('.toggle');
+        const painel = document.querySelector('.painel')
+        const time = document.querySelector('.time')
+
+    const toggle = (e) => {
+        e.preventDefault()
+        painel.classList.toggle('hidden')
+    };
+
+        if(toggleBtn) {
+            toggleBtn.addEventListener('click', toggle)
+        }
+        if(time) {
+            setInterval(() => {
+                const date = new Date()
+                const currentTime = [date.getHours(), date.getMinutes(), date.getSeconds()].map((v) => `0${v}`.slice(-2)).join(":");
+                time.innerHTML= currentTime;
+                
+            }, 1000);
+            
+                
+           
+        }
+
+       
+    
+    
+    </script>
+   
+</body>
+</html>

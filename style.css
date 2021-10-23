@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 0.5em 2em;
+    border-radius: 0.5em;
+    border: none;
+    font-weight: 300;
+}
+
+.glass {
+    backdrop-filter: blur(15px);
+}
+.toggle {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    font: bold
+
+}
+
+.wallpaper{
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background: rgb(181, 202, 211) url('Imagens/Windows\ 11\ Wallpaper\ 1.jpg') no-repeat center;
+    background-size: cover;
+
+}
+
+.painel {
+    margin: 7px;
+    padding: 10px;
+    width: 50vw;
+    height: calc(100% - 20px);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 5px;
+    box-shadow: 0px 1px 2px 0px black;
+    transition: 1s ease-in-out;
+    
+}
+
+.painel.hidden {
+    left: calc(-50vw - 7px);
+}
+
+.painel .avatar {
+    position: absolute;
+    right:  10px;
+    top: 5px
+}
+.painel .avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+
+}
+.painel .time {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-bottom: 15px
+}
+
+.painel .tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    
+}
+
+.painel .tiles .tile {
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    min-height:  138px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.painel .tiles .tile.weather {
+    background: linear-gradient(to bottom right, #f0eff4, #fdf5c6);
+}
+ .painel .tiles .tile.edge {
+     background: url(Imagens/pexels-asad-photo-maldives-457882.jpg) center ;
+     background-size: cover;
+ }
+
+
+ .painel .bottons {
+     display:  flex;
+     justify-content:  center;
+     align-items: center;
+     margin: 20px 0;
+ }
+
+ .painel .top.stories {
+     background-color: rgba(255, 255, 255, 0.3);
+     padding: 10px 0;
+     height: 100px;
+     text-align: center;
+     border-radius: 10px;
+
+     
+ }
+
