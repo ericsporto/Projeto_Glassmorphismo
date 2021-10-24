@@ -10,6 +10,7 @@ body{
     min-height: 100vh;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
+    
 }
 
 .btn {
@@ -44,8 +45,8 @@ body{
 .painel {
     margin: 7px;
     padding: 10px;
-    width: 50vw;
-    height: calc(100% - 20px);
+    width: 45vw;
+    height: calc(100% - 15px);
     border-radius: 10px;
     position: relative;
     overflow: hidden;
@@ -53,6 +54,7 @@ body{
     left: 5px;
     box-shadow: 0px 1px 2px 0px black;
     transition: 1s ease-in-out;
+    
     
 }
 
@@ -63,47 +65,97 @@ body{
 .painel .avatar {
     position: absolute;
     right:  10px;
-    top: 5px
+    top: 10px
 }
 .painel .avatar img {
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
 
 }
 .painel .time {
     font-size: 1.3rem;
     text-align: center;
-    margin-bottom: 15px
+    margin-top: 10px;
 }
 
 .painel .tiles {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
-    
-}
-
-.painel .tiles .tile {
-    width: calc(50% - 10px);
-    margin-bottom: 20px;
-    min-height:  138px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.3);
+    width: 90%;
+    margin-left: 35px;
+    margin-top: 30px;
+       
 }
 
 .painel .tiles .tile.weather {
-    background: linear-gradient(to bottom right, #f0eff4, #fdf5c6);
+     background: url(Imagens/imagem01.jpg), center ;
+     background-size: cover;
+     width: 45%;
+     margin-bottom: 20px;
+     margin-left: 25px;
+     height:  130px;
+     border-radius: 10px;
+     background-color: rgba(255, 255, 255, 0.3);
+     
 }
  .painel .tiles .tile.edge {
-     background: url(Imagens/pexels-asad-photo-maldives-457882.jpg) center ;
+     background: url(Imagens/imagem02.jpg), center;
      background-size: cover;
+     width: 45%;
+     margin-bottom: 20px;
+     margin-right: 25px;
+     height:  130px;
+     border-radius: 10px;
+     background-color: rgba(255, 255, 255, 0.3);
  }
 
+ .painel .tiles .tile.stocks{
+     background: url(Imagens/imagem03.jpg), center;
+     background-size: cover;
+     width: 45%;
+     margin-bottom: 20px;
+     margin-left: 25px;
+     margin-top: -8px;
+     height:  120px;
+     border-radius: 10px;
+     background-color: rgba(255, 255, 255, 0.3);
+ }
+
+ .painel .tiles .tile.calendar {
+     background: url(Imagens/imagem04.jpg), center;
+     background-size: cover;
+     width: 45%;
+     margin-bottom: 20px;
+     margin-right: 25px;
+     margin-top: -8px;
+     min-height:  200px;
+     border-radius: 10px;
+     background-color: rgba(255, 255, 255, 0.3);
+ }
+
+ .painel .tiles .tile.photos {
+     background: url(Imagens/imagem05.jpg), center;
+     background-size: cover;
+     width: 45%;
+     margin-top: -14.5%;
+     margin-left: 25px;
+     height:  210.5px;
+     border-radius: 10px;
+     background-color: rgba(255, 255, 255, 0.3);
+ }
+
+.painel .tiles .tile.todo {
+    background: url(Imagens/imagem06.jpg), center;
+     background-size: cover;
+     width: 45%;
+     height:  130px;
+     margin-top: -8px;
+     margin-right: 25px;
+     border-radius: 10px;
+     background-color: rgba(255, 255, 255, 0.3);
+}
 
  .painel .bottons {
      display:  flex;
@@ -113,11 +165,14 @@ body{
  }
 
  .painel .top.stories {
+     background: url(Imagens/imagem07.jpg), center;
+     background-size:cover;
      background-color: rgba(255, 255, 255, 0.3);
-     padding: 10px 0;
-     height: 100px;
+     height: 95px;
+     width: 85%;
+     margin-left: 50px;
+     border-radius: 10px 10px 0px 0px;
      text-align: center;
-     border-radius: 10px;
 
      
  }
