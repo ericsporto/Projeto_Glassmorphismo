@@ -85,7 +85,7 @@ body{
     justify-content: space-between;
     width: 90%;
     margin-left: 35px;
-    margin-top: 30px;
+    margin-top: 20px;
        
 }
 
@@ -165,10 +165,10 @@ body{
  }
 
  .painel .top.stories {
-     background: url(Imagens/imagem07.jpg), center;
+     background: url(Imagens/imagem07.jpg), content-box;
      background-size:cover;
      background-color: rgba(255, 255, 255, 0.3);
-     height: 95px;
+     height: 80px;
      width: 85%;
      margin-left: 50px;
      border-radius: 10px 10px 0px 0px;
